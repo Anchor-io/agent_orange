@@ -68,5 +68,18 @@ module AgentOrange
     def to_s
       [name, version].compact.join(' ')
     end
+
+    def is_android?
+      type == 'android'
+    end
+
+    def is_ios?
+      type == 'ios'
+    end
+
+    def is_windows?
+      type == 'windows'
+    end
+    
   end
 end
